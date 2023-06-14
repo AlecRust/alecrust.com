@@ -1,0 +1,53 @@
+{
+  "name": "alecrust.com",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Alec Rust (https://www.alecrust.com/)",
+  "packageManager": "yarn@1.22.19",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack --mode production",
+    "lint": "prettier '**/*.{html,js,md,yml}' --write; eslint '**/*.js' --fix; stylelint '**/*.css' --fix",
+    "prepare": "husky install"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "photoswipe": "^5.3.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
+    "image-minimizer-webpack-plugin": "^3.8.2",
+    "lint-staged": "^13.2.2",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.24",
+    "postcss-import": "^15.1.0",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^8.5.0",
+    "prettier": "^2.8.8",
+    "responsive-loader": "^3.1.2",
+    "sharp": "^0.32.1",
+    "stylelint": "^15.7.0",
+    "stylelint-config-suitcss": "^19.0.0",
+    "stylelint-selector-bem-pattern": "^2.1.1",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.86.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "lint-staged": {
+    "*.{html,js,md,yml}": "prettier --write",
+    "*.js": "eslint --fix",
+    "*.css": "stylelint --fix"
+  }
+}

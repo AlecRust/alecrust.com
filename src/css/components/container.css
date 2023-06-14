@@ -1,0 +1,16 @@
+/** @define Container */
+
+:root {
+  --Container-maxWidth: 1420px;
+}
+
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (--medium-viewport) {
+    max-width: 768px;
+  }
+}

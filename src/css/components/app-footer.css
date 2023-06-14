@@ -1,0 +1,7 @@
+/** @define AppFooter */
+
+.AppFooter {
+  background-color: var(--colorCharcoalDark);
+  padding: 50px var(--spaceLarge);
+  text-align: center;
+}

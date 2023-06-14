@@ -1,0 +1,25 @@
+@custom-media --small-viewport (min-width: 576px);
+@custom-media --medium-viewport (min-width: 768px);
+@custom-media --large-viewport (min-width: 992px);
+
+:root {
+  --fontSize-base: 17px;
+  --lineHeight-base: 1.7;
+
+  --colorOffWhite: #f4f7fc;
+  --colorCharcoal: #264653;
+  --colorCharcoalDark: #1a2a33;
+  --colorPersianGreen: #2A9D8F;
+  --colorSaffron: #E9C46A;
+  --colorSandyBrown: #F4A261;
+  --colorBurntSienna: #E76F51;
+
+  --colorText: #443633;
+
+  --spaceBase: 10px;
+  --spaceSmall: 5px;
+  --spaceLarge: 20px;
+  --spaceXLarge: 40px;
+
+  --borderRadius: 5px;
+}

@@ -1,0 +1,36 @@
+/** @define utilities */
+
+.u-hiddenVisually {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+.u-mb {
+  margin-bottom: var(--spaceBase) !important;
+}
+
+.u-mbS {
+  margin-bottom: var(--spaceSmall) !important;
+}
+
+.u-mbL {
+  margin-bottom: var(--spaceLarge) !important;
+}
+
+.u-mbXL {
+  margin-bottom: var(--spaceXLarge) !important;
+}
+
+.u-textCenter {
+  text-align: center !important;
+}
+
+.u-imageFluid {
+  height: auto !important;
+  max-width: 100% !important;
+}

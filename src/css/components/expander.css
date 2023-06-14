@@ -1,0 +1,62 @@
+/** @define Expander */
+
+.Expander {
+
+  &.is-expanded {
+  }
+}
+
+.Expander-content {
+  overflow-y: hidden;
+  position: relative;
+  transition: max-height 0.8s ease-in-out;
+
+  &::before {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      var(--colorCharcoal) 100%
+    );
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.Expander-button {
+  background-color: transparent;
+  border: 0;
+  border-radius: var(--borderRadius);
+  color: #fff;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+
+  &:hover {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+  }
+}
+
+/* stylelint-disable */
+
+.js {
+  & .Expander-content {
+    max-height: 600px;
+  }
+}
+
+.no-js {
+  & .Expander-button {
+    display: none;
+  }
+}
+
+/* stylelint-enable */

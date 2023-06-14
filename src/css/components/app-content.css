@@ -1,0 +1,14 @@
+/** @define AppContent */
+
+.AppContent {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.AppContent-link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

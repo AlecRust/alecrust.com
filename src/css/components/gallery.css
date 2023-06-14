@@ -1,0 +1,34 @@
+/** @define Gallery */
+
+:root {
+  --Gallery-gap: var(--spaceLarge);
+}
+
+.Gallery {
+  column-count: 2;
+  counter-reset: grid;
+  gap: var(--Gallery-gap);
+
+  @media (--small-viewport) {
+    column-count: 3;
+  }
+}
+
+.Gallery-item {
+  break-inside: avoid;
+
+  & + .Gallery-item {
+    margin-top: var(--Gallery-gap);
+  }
+}
+
+.Gallery-link {
+  border-radius: var(--borderRadius);
+  display: block;
+  overflow: hidden;
+}
+
+.Gallery-image {
+  height: auto;
+  width: 100%;
+}

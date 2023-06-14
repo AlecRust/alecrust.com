@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Node packages
+        uses: bahmutov/npm-install@v1
+      - name: Run Prettier
+        run: yarn prettier --check '**/*.{html,js,md,yml}'
+      - name: Run ESLint
+        run: yarn eslint '**/*.js'
+      - name: Run Stylelint
+        run: yarn stylelint '**/*.css'
+
+  deploy:
+    needs: lint
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Node packages
+        uses: bahmutov/npm-install@v1
+      - name: Build site
+        run: yarn build
+      - name: Deploy to gh-pages branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
