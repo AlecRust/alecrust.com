@@ -11,6 +11,7 @@
   background-image: linear-gradient(var(--AppHeader-lineColor) 1px, transparent 1px),
   linear-gradient(to right, var(--AppHeader-lineColor) 1px, transparent 1px);
   background-size: 100px 100px;
+  border-bottom: 8px solid var(--colorLightGray);
 }
 
 .AppHeader-inner {

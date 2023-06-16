@@ -3,6 +3,7 @@
  */
 
 @font-face {
+  font-display: swap;
   font-family: "Titillium Web";
   font-style: normal;
   font-weight: 600;

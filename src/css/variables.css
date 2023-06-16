@@ -4,15 +4,12 @@
 
 :root {
   --fontSize-base: 17px;
-  --lineHeight-base: 1.7;
+  --lineHeight-base: 1.8;
 
   --colorOffWhite: #f4f7fc;
+  --colorLightGray: #dbdee2;
   --colorCharcoal: #264653;
   --colorCharcoalDark: #1a2a33;
-  --colorPersianGreen: #2A9D8F;
-  --colorSaffron: #E9C46A;
-  --colorSandyBrown: #F4A261;
-  --colorBurntSienna: #E76F51;
 
   --colorText: #443633;
 

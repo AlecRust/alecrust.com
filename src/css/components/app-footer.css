@@ -5,3 +5,10 @@
   padding: 50px var(--spaceLarge);
   text-align: center;
 }
+
+.AppFooter-link {
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

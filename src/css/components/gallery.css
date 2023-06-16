@@ -1,7 +1,7 @@
 /** @define Gallery */
 
 :root {
-  --Gallery-gap: var(--spaceLarge);
+  --Gallery-gap: 30px;
 }
 
 .Gallery {
