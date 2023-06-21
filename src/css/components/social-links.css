@@ -11,6 +11,10 @@
 
 .SocialLinks-link {
   display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .SocialLinks-linkIcon {
