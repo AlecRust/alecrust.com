@@ -3,6 +3,7 @@
 :root {
   --AppHeader-backgroundColor: var(--colorOffWhite);
   --AppHeader-lineColor: #ddd;
+  --AppHeader-textColor: #443633;
   --AppHeader-gradientColor: var(--colorOffWhite);
 }
 
@@ -24,7 +25,7 @@
 }
 
 .AppHeader-content {
-  color: var(--colorText);
+  color: var(--AppHeader-textColor);
   padding: 20px;
 }
 
@@ -33,8 +34,8 @@
 }
 
 .AppHeader-link {
-  border-bottom: 1px solid var(--colorText);
-  box-shadow: inset 0 -1px 0 var(--colorText);
+  border-bottom: 1px solid var(--AppHeader-textColor);
+  box-shadow: inset 0 -1px 0 var(--AppHeader-textColor);
 
   &:hover,
   &:focus,
