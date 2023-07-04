@@ -5,6 +5,8 @@
 @import "./components/app-content";
 @import "./components/app-footer";
 @import "./components/app-header";
+@import "./components/button";
+@import "./components/button-group";
 @import "./components/container";
 @import "./components/expander";
 @import "./components/gallery";
