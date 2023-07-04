@@ -14,6 +14,30 @@
       href="<%= require('./img/favicon.svg') %>"
       type="image/svg+xml"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alec Rust",
+        "email": "me@alecrust.com",
+        "image": "https://www.alecrust.com/<%= require('./img/alec-rust.jpg') %>",
+        "description": "Web developer based in London, currently working for Featurist.",
+        "gender": "male",
+        "nationality": "British",
+        "jobTitle": "Web Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Featurist",
+          "url": "https://featurist.co.uk/"
+        },
+        "url": "https://www.alecrust.com/",
+        "sameAs": [
+          "https://github.com/AlecRust",
+          "https://www.linkedin.com/in/alecrust/",
+          "https://twitter.com/AlecRust"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="AppHeader">
