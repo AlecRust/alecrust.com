@@ -78,7 +78,7 @@ module.exports = {
       template: './src/index.html',
       templateParameters: {
         projects: require('./src/data/projects.json').sort(
-          (a, b) => b.year - a.year
+          (a, b) => b.year - a.year,
         ),
       },
     }),
