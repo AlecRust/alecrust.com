@@ -1,7 +1,11 @@
 /** @define Gallery */
 
 :root {
-  --Gallery-gap: 30px;
+  --Gallery-gap: 20px;
+
+  @media (--medium-viewport) {
+    --Gallery-gap: 30px;
+  }
 }
 
 .Gallery {
