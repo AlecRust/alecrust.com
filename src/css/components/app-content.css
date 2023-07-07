@@ -1,7 +1,7 @@
 /** @define AppContent */
 
 .AppContent {
-  box-shadow: inset 0 100px 50px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 100px 50px 0 rgba(0, 0, 0, 0.05);
   padding-bottom: 50px;
   padding-top: 50px;
 }
