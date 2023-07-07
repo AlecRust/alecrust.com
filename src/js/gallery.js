@@ -14,4 +14,4 @@ function initializeGallery() {
   gallery.init()
 }
 
-initializeGallery()
+export default initializeGallery

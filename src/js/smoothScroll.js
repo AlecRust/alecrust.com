@@ -2,13 +2,15 @@
  * Attaches event listeners to elements with the class '.js-smooth-scroll'
  * for smooth scrolling to target elements on click.
  */
-document.querySelectorAll('.js-smooth-scroll').forEach((link) => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault()
-    const target = link.getAttribute('href')
-    smoothScrollTo(target)
+function initializeSmoothScroll() {
+  document.querySelectorAll('.js-smooth-scroll').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault()
+      const target = link.getAttribute('href')
+      smoothScrollTo(target)
+    })
   })
-})
+}
 
 /**
  * Smoothly scrolls to the specified target if it exists.
@@ -28,3 +30,5 @@ function smoothScrollTo(selector) {
     targetElement.scrollIntoView(options)
   }
 }
+
+export default initializeSmoothScroll

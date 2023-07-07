@@ -2,9 +2,11 @@
  * Attaches event listeners to elements with the class '.js-expander-button'
  * for toggling the expansion of the associated content.
  */
-document.querySelectorAll('.js-expander-button').forEach((button) => {
-  button.addEventListener('click', () => toggleExpansion(button))
-})
+function initializeExpander() {
+  document.querySelectorAll('.js-expander-button').forEach((button) => {
+    button.addEventListener('click', () => toggleExpansion(button))
+  })
+}
 
 /**
  * Toggles the expansion state of content associated with the given button.
@@ -20,3 +22,5 @@ function toggleExpansion(button) {
   button.textContent = isExpanded ? 'Show less' : 'Show more'
   button.setAttribute('aria-expanded', isExpanded)
 }
+
+export default initializeExpander
