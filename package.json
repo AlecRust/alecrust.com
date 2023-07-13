@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack --mode production",
-    "lint": "prettier '**/*.{html,js,md,yml}' --write; eslint '**/*.js' --fix; stylelint '**/*.css' --fix",
+    "lint": "prettier --check . && eslint . && stylelint '**/*.css'",
+    "format": "prettier --write . && eslint --fix . && stylelint --fix '**/*.css'",
     "prepare": "husky install"
   },
   "browserslist": [
@@ -46,7 +47,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "lint-staged": {
-    "*.{html,js,md,yml}": "prettier --write",
+    "*": "prettier --write --ignore-unknown",
     "*.js": "eslint --fix",
     "*.css": "stylelint --fix"
   }

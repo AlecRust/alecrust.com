@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -24,16 +24,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 'latest'
-          cache: 'yarn'
+          node-version: "latest"
+          cache: "yarn"
       - name: Install Node packages
         run: yarn install --immutable
-      - name: Run Prettier
-        run: yarn prettier --check '**/*.{html,js,md,yml}'
-      - name: Run ESLint
-        run: yarn eslint '**/*.js'
-      - name: Run Stylelint
-        run: yarn stylelint '**/*.css'
+      - name: Run lint
+        run: yarn lint
 
   deploy:
     needs: lint
@@ -48,8 +44,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 'latest'
-          cache: 'yarn'
+          node-version: "latest"
+          cache: "yarn"
       - name: Install Node packages
         run: yarn install --immutable
       - name: Build site
@@ -59,7 +55,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: 'dist'
+          path: "dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2

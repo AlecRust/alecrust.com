@@ -1,7 +1,6 @@
 /** @define Expander */
 
 .Expander {
-
   &.is-expanded {
   }
 }
@@ -18,7 +17,7 @@
       var(--colorCharcoal) 100%
     );
     bottom: 0;
-    content: '';
+    content: "";
     display: block;
     height: 50px;
     left: 0;

@@ -7,7 +7,6 @@
 }
 
 .AppFooter-link {
-
   &:hover {
     text-decoration: underline;
   }
