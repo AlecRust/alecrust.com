@@ -232,5 +232,11 @@
     "filename": "boots-opticians-direct.png",
     "type": "team",
     "year": 2021
+  },
+  {
+    "name": "Protected Video",
+    "filename": "protected-video.png",
+    "type": "independent",
+    "year": 2022
   }
 ]
