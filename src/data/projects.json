@@ -238,5 +238,11 @@
     "filename": "protected-video.png",
     "type": "independent",
     "year": 2022
+  },
+  {
+    "name": "SimuHire",
+    "filename": "simuhire.png",
+    "type": "independent",
+    "year": 2023
   }
 ]
