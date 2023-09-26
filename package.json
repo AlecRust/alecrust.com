@@ -16,7 +16,8 @@
   ],
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "photoswipe": "^5.4.1"
+    "photoswipe": "^5.4.1",
+    "photoswipe-dynamic-caption-plugin": "^1.2.7"
   },
   "devDependencies": {
     "@babel/core": "^7.22.20",
