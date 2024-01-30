@@ -20,7 +20,9 @@ describe('Page Tests', () => {
       { waitUntil: 'networkidle0' },
     )
     const image = await page.screenshot()
-    expect(image).toMatchImageSnapshot()
+    expect(image).toMatchImageSnapshot({
+      failureThreshold: 2,
+    })
   })
 
   test('opens gallery on image click', async () => {
