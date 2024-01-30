@@ -7,7 +7,7 @@ const postcssImport = require('postcss-import')
 const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
-  mode: 'development',
+  mode: process.env.CI ? 'production' : 'development',
   entry: './src/js/app.js',
   output: {
     filename: '[name].[contenthash].js',
