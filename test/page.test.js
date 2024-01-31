@@ -27,17 +27,12 @@ describe('Page Tests', () => {
   })
 
   test('opens gallery on image click', async () => {
-    try {
-      await page.goto(
-        `file://${path.join(__dirname, '..', '/dist/index.html')}`,
-        { waitUntil: 'networkidle0' },
-      )
-      await page.click('.Gallery-link:first-child')
-      await page.waitForSelector('.pswp.pswp--open')
-      await page.waitForSelector('.pswp__img')
-    } catch (error) {
-      console.error(error)
-      throw error
-    }
+    await page.goto(
+      `file://${path.join(__dirname, '..', '/dist/index.html')}`,
+      { waitUntil: 'networkidle0' },
+    )
+    await page.click('.Gallery-link:first-child')
+    await page.waitForSelector('.pswp.pswp--open')
+    await page.waitForSelector('.pswp__img')
   })
 })
