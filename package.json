@@ -42,7 +42,7 @@
     "prettier": "^3.2.4",
     "puppeteer": "^21.10.0",
     "responsive-loader": "^3.1.2",
-    "sharp": "^0.32.6",
+    "sharp": "^0.33.2",
     "stylelint": "^16.2.0",
     "stylelint-config-suitcss": "^20.0.0",
     "stylelint-selector-bem-pattern": "^3.0.1",
