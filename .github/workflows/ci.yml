@@ -51,7 +51,7 @@ jobs:
         run: yarn build
       - name: Run tests
         run: yarn test
-      - name: Upload diff images
+      - name: Upload artifacts
         if: failure()
         uses: actions/upload-artifact@v4
         with:
