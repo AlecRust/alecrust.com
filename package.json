@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "author": "Alec Rust (https://www.alecrust.com/)",
-  "packageManager": "yarn@1.22.19",
+  "packageManager": "yarn@1.22.21",
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack",
