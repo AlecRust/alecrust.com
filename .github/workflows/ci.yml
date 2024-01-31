@@ -33,9 +33,7 @@ jobs:
         run: yarn lint
 
   test:
-    needs: lint
     name: Test
-    # runs-on: macos-latest
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
