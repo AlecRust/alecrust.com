@@ -1,10 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:best-practices",
-    ":preserveSemverRanges",
-    ":automergeLinters",
-    "schedule:weekdays"
-  ],
+  "extends": ["config:recommended", ":automergeLinters", "schedule:weekdays"],
   "enabledManagers": ["npm", "github-actions"]
 }
