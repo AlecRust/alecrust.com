@@ -2,5 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": ["npm", "github-actions"],
   "extends": ["config:recommended", ":automergeMinor", "group:allNonMajor"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["sharp"],
+      "allowedVersions": "<=0.32.6 || >=0.34.0"
+    }
+  ],
   "rangeStrategy": "bump"
 }
