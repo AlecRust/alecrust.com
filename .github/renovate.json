@@ -1,11 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": ["npm", "github-actions"],
-  "extends": ["config:recommended", ":automergeMinor", "group:allNonMajor"],
+  "extends": [
+    "config:recommended",
+    "group:allNonMajor",
+    ":automergeMinor",
+    ":disableDependencyDashboard"
+  ],
   "packageRules": [
     {
       "matchPackageNames": ["sharp"],
-      "allowedVersions": "<=0.32.6 || >=0.34.0"
+      "allowedVersions": ">=0.34.0"
     }
   ],
   "rangeStrategy": "bump"
