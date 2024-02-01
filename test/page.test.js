@@ -14,11 +14,14 @@ describe('Page Tests', () => {
     await browser.close()
   })
 
-  test('renders correctly', async () => {
+  beforeEach(async () => {
     await page.goto(
       `file://${path.join(__dirname, '..', '/dist/index.html')}`,
       { waitUntil: 'networkidle0' },
     )
+  })
+
+  test('renders correctly', async () => {
     const image = await page.screenshot()
     expect(image).toMatchImageSnapshot({
       failureThreshold: 0.01,
@@ -27,10 +30,6 @@ describe('Page Tests', () => {
   })
 
   test('opens gallery on image click', async () => {
-    await page.goto(
-      `file://${path.join(__dirname, '..', '/dist/index.html')}`,
-      { waitUntil: 'networkidle0' },
-    )
     await page.click('.Gallery-link:first-child')
     await page.waitForSelector('.pswp.pswp--open')
     await page.waitForSelector('.pswp__img')
