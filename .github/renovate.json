@@ -4,6 +4,7 @@
   "extends": [
     "config:recommended",
     "group:allNonMajor",
+    ":maintainLockFilesWeekly",
     ":automergeMinor",
     ":disableDependencyDashboard"
   ],
