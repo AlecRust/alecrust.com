@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack",
-    "test": "jest --config ./test/jest.config.js",
+    "test": "jest",
     "lint": "prettier --check . && eslint . && stylelint '**/*.css'",
     "format": "prettier --write . && eslint --fix . && stylelint --fix '**/*.css'",
     "prepare": "husky"

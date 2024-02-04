@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer')
 const path = require('path')
 
-describe('Page Tests', () => {
+describe('Tests', () => {
   let browser
   let page
 
