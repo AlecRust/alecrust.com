@@ -4,5 +4,5 @@ My personal site.
 
 ## Quick start
 
-1. `yarn`
-2. `yarn dev`
+1. `npm install`
+2. `npm run dev`
