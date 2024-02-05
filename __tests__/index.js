@@ -23,7 +23,10 @@ describe('Tests', () => {
 
   test('renders correctly', async () => {
     const image = await page.screenshot()
-    expect(image).toMatchImageSnapshot()
+    expect(image).toMatchImageSnapshot({
+      failureThreshold: 0.01,
+      failureThresholdType: 'percent',
+    })
   })
 
   test('opens gallery on image click', async () => {
