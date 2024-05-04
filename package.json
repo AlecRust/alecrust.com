@@ -44,7 +44,7 @@
     "puppeteer": "^22.7.1",
     "responsive-loader": "^3.1.2",
     "sharp": "^0.32.6",
-    "stylelint": "^16.4.0",
+    "stylelint": "^16.5.0",
     "stylelint-config-suitcss": "^21.0.0",
     "stylelint-selector-bem-pattern": "^4.0.0",
     "terser-webpack-plugin": "^5.3.10",
