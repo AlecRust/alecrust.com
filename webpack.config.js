@@ -12,10 +12,6 @@ module.exports = {
   output: {
     filename: '[name].[contenthash].js',
   },
-  devServer: {
-    host: 'localhost',
-    port: 8080,
-  },
   module: {
     rules: [
       {
