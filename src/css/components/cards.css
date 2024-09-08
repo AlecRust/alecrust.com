@@ -1,7 +1,6 @@
 /** @define Cards */
 
 .Cards {
-
   @media (--medium-viewport) {
     display: grid;
     gap: 30px;

@@ -6,6 +6,7 @@
       "preset": "suit"
     },
     "block-no-empty": null,
-    "rule-empty-line-before": null
+    "rule-empty-line-before": null,
+    "at-rule-empty-line-before": null
   }
 }
