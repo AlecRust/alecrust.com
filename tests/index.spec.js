@@ -8,7 +8,7 @@ test.describe('Tests', () => {
   })
 
   test('renders correctly', async ({ page }) => {
-    const image = await page.screenshot()
+    const image = await page.screenshot({ fullPage: true })
     expect(image).toMatchSnapshot('render-snapshot.png')
   })
 
