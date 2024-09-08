@@ -12,6 +12,21 @@ test.describe('Tests', () => {
     expect(image).toMatchSnapshot('render-snapshot.png')
   })
 
+  test('scrolls to the contact section', async ({ page }) => {
+    const contactLink = page.locator('.js-smooth-scroll[href="#contact"]')
+
+    // Initial state
+    const initialScrollPosition = await page.evaluate(() => window.scrollY)
+    expect(initialScrollPosition).toBe(0)
+
+    // Click the "Contact me" button
+    await contactLink.click()
+
+    // New scroll position
+    const newScrollPosition = await page.evaluate(() => window.scrollY)
+    expect(newScrollPosition).toBeGreaterThan(500)
+  })
+
   test('opens gallery on image click', async ({ page }) => {
     const firstGalleryLink = page
       .locator('#team-projects .Gallery-link')
