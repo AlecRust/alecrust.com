@@ -7,6 +7,8 @@ module.exports = [
   eslintConfigPrettier,
   {
     ignores: ['dist'],
+  },
+  {
     languageOptions: {
       globals: {
         ...globals.node,
