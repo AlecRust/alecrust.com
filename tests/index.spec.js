@@ -1,10 +1,9 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
-const path = require('path')
 
 test.describe('Tests', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto(`file://${path.join(__dirname, '..', '/dist/index.html')}`)
+    await page.goto('/')
   })
 
   test('renders correctly', async ({ page }) => {
