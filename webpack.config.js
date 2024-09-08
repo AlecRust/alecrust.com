@@ -85,6 +85,6 @@ module.exports = {
     }),
   ],
   performance: {
-    hints: process.env.CI ? false : 'warning',
+    hints: false,
   },
 }
