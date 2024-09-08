@@ -13,8 +13,37 @@ test.describe('Tests', () => {
   })
 
   test('opens gallery on image click', async ({ page }) => {
-    await page.click('.Gallery-link:first-child')
+    const firstGalleryLink = page
+      .locator('#team-projects .Gallery-link')
+      .first()
+
+    // Click the first gallery image
+    await firstGalleryLink.click()
+
+    // Wait for the gallery overlay
     await page.waitForSelector('.pswp.pswp--open')
+
+    // Wait for the large gallery image
     await page.waitForSelector('.pswp__img')
+  })
+
+  test('expands and collapses gallery images', async ({ page }) => {
+    const expanderButton = page.locator(
+      '.Expander-button[aria-controls="team-projects"]',
+    )
+
+    // Initial state
+    await expect(expanderButton).toHaveAttribute('aria-expanded', 'false')
+    await expect(expanderButton).toHaveText('Show more')
+
+    // Click to expand
+    await expanderButton.click()
+    await expect(expanderButton).toHaveAttribute('aria-expanded', 'true')
+    await expect(expanderButton).toHaveText('Show less')
+
+    // Click to collapse
+    await expanderButton.click()
+    await expect(expanderButton).toHaveAttribute('aria-expanded', 'false')
+    await expect(expanderButton).toHaveText('Show more')
   })
 })
