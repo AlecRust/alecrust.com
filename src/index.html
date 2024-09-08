@@ -108,26 +108,63 @@
       </section>
       <section class="u-mbXL">
         <div class="Container">
+          <h2 class="u-textCenter u-mbL">Some projects I work on</h2>
+          <div id="active-projects">
+            <ul class="Cards">
+              <% projects.forEach(function(project) { %>
+              <li class="Cards-item">
+                <a href="<%= project.url %>" class="Cards-link" target="_blank">
+                  <img
+                    src="<%= require('./img/logos/' + project.filename) %>"
+                    class="Cards-image"
+                    width="50"
+                    height="50"
+                    alt="<%= project.name + ' logo' %>"
+                  />
+                  <div class="Cards-content">
+                    <h3 class="Cards-title"><%= project.name %></h3>
+                    <p class="Cards-description"><%= project.description %></p>
+                  </div>
+                  <svg
+                    class="Cards-linkIcon"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Open in new tab</title>
+                    <path
+                      d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <% }); %>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="u-mbXL">
+        <div class="Container">
           <h2 class="u-textCenter u-mbL">Some things I built with a team</h2>
           <div class="Expander">
             <div id="team-projects" class="Expander-content">
               <ul class="Gallery js-gallery">
-                <% projects.filter( p => p.type == 'team'
-                ).forEach(function(project) { %>
+                <% galleries.filter( p => p.type == 'team'
+                ).forEach(function(item) { %>
                 <li class="Gallery-item">
                   <a
-                    href="<%= require('./img/work/' + project.filename) %>"
+                    href="<%= require('./img/screenshots/' + item.filename) %>"
                     class="Gallery-link"
-                    data-pswp-width="<%= require('./img/work/' + project.filename).width %>"
-                    data-pswp-height="<%= require('./img/work/' + project.filename).height %>"
+                    data-pswp-width="<%= require('./img/screenshots/' + item.filename).width %>"
+                    data-pswp-height="<%= require('./img/screenshots/' + item.filename).height %>"
                     target="_blank"
                   >
                     <img
-                      src="<%= require('./img/work/' + project.filename + '?size=400') %>"
+                      src="<%= require('./img/screenshots/' + item.filename + '?size=400') %>"
                       class="Gallery-image"
                       width="200"
                       height=""
-                      alt="<%= project.name %>"
+                      alt="<%= item.name %>"
                     />
                   </a>
                 </li>
@@ -149,24 +186,24 @@
         <div class="Container">
           <h2 class="u-textCenter u-mbL">Some other things I built</h2>
           <div class="Expander">
-            <div id="independent-projects" class="Expander-content">
+            <div id="other-projects" class="Expander-content">
               <ul class="Gallery js-gallery">
-                <% projects.filter( p => p.type == 'independent'
-                ).forEach(function(project) { %>
+                <% galleries.filter( p => p.type == 'independent'
+                ).forEach(function(item) { %>
                 <li class="Gallery-item">
                   <a
-                    href="<%= require('./img/work/' + project.filename) %>"
+                    href="<%= require('./img/screenshots/' + item.filename) %>"
                     class="Gallery-link"
-                    data-pswp-width="<%= require('./img/work/' + project.filename).width %>"
-                    data-pswp-height="<%= require('./img/work/' + project.filename).height %>"
+                    data-pswp-width="<%= require('./img/screenshots/' + item.filename).width %>"
+                    data-pswp-height="<%= require('./img/screenshots/' + item.filename).height %>"
                     target="_blank"
                   >
                     <img
-                      src="<%= require('./img/work/' + project.filename + '?size=400') %>"
+                      src="<%= require('./img/screenshots/' + item.filename + '?size=400') %>"
                       class="Gallery-image"
                       width="200"
                       height=""
-                      alt="<%= project.name %>"
+                      alt="<%= item.name %>"
                     />
                   </a>
                 </li>
@@ -176,7 +213,7 @@
             <button
               type="button"
               class="Expander-button js-expander-button"
-              aria-controls="independent-projects"
+              aria-controls="other-projects"
               aria-expanded="false"
             >
               Show more
@@ -198,6 +235,7 @@
                   <svg
                     class="SocialLinks-linkIcon"
                     role="img"
+                    fill="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -215,6 +253,7 @@
                   <svg
                     class="SocialLinks-linkIcon"
                     role="img"
+                    fill="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -234,6 +273,7 @@
                   <svg
                     class="SocialLinks-linkIcon"
                     role="img"
+                    fill="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -250,6 +290,7 @@
                   <svg
                     class="SocialLinks-linkIcon"
                     role="img"
+                    fill="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >

@@ -1,0 +1,62 @@
+/** @define Cards */
+
+.Cards {
+
+  @media (--medium-viewport) {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.Cards-item {
+  background-color: var(--colorOffWhite);
+  border-radius: var(--borderRadius);
+  display: flex;
+  margin-bottom: var(--spaceLarge);
+  position: relative;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  @media (--medium-viewport) {
+    margin-bottom: 0;
+  }
+}
+
+.Cards-link {
+  align-items: center;
+  color: var(--colorCharcoalDark);
+  display: flex;
+  flex: 1;
+  gap: 13px;
+  padding: 12px 15px;
+}
+
+.Cards-image {
+  border-radius: var(--borderRadius);
+}
+
+.Cards-content {
+  line-height: var(--lineHeight-small);
+}
+
+.Cards-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.Cards-description {
+  font-size: 15px;
+}
+
+.Cards-linkIcon {
+  color: #777;
+  height: auto;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 16px;
+}

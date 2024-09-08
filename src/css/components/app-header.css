@@ -3,7 +3,7 @@
 :root {
   --AppHeader-backgroundColor: var(--colorOffWhite);
   --AppHeader-lineColor: #ddd;
-  --AppHeader-textColor: #443633;
+  --AppHeader-textColor: var(--colorDarkBrown);
   --AppHeader-gradientColor: var(--colorOffWhite);
 }
 

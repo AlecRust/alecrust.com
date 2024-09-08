@@ -1,248 +1,26 @@
 [
   {
-    "name": "BBC Homepage",
-    "filename": "bbc-homepage.png",
-    "type": "team",
-    "year": 2009
-  },
-  {
-    "name": "BBC.com",
-    "filename": "bbc-dotcom.png",
-    "type": "team",
-    "year": 2008
-  },
-  {
-    "name": "Top Gear",
-    "filename": "top-gear.png",
-    "type": "team",
-    "year": 2008
-  },
-  {
-    "name": "Disney Store emails",
-    "filename": "disney-store-emails.png",
-    "type": "team",
-    "year": 2007
-  },
-  {
-    "name": "Honda Civic Forum",
-    "filename": "honda-civic-forum.png",
-    "type": "independent",
-    "year": 2007
-  },
-  {
-    "name": "Garnier emails",
-    "filename": "garnier-emails.png",
-    "type": "team",
-    "year": 2007
-  },
-  {
-    "name": "Air France emails",
-    "filename": "air-france-emails.png",
-    "type": "team",
-    "year": 2007
-  },
-  {
-    "name": "Barclays emails",
-    "filename": "barclays-emails.png",
-    "type": "team",
-    "year": 2007
-  },
-  {
-    "name": "Pfizer microsite",
-    "filename": "pfizer-microsite.png",
-    "type": "team",
-    "year": 2007
-  },
-  {
-    "name": "Apple Reseller emails",
-    "filename": "apple-reseller-emails.png",
-    "type": "team",
-    "year": 2007
-  },
-  {
-    "name": "Crisis microsite",
-    "filename": "crisis-microsite.png",
-    "type": "team",
-    "year": 2007
-  },
-  {
-    "name": "BBC Good Food",
-    "filename": "bbc-good-food.png",
-    "type": "team",
-    "year": 2008
-  },
-  {
-    "name": "Gardeners' World",
-    "filename": "gardeners-world.png",
-    "type": "team",
-    "year": 2008
-  },
-  {
-    "name": "BBC Three",
-    "filename": "bbc-three.png",
-    "type": "team",
-    "year": 2016
-  },
-  {
-    "name": "Sinfini Music",
-    "filename": "sinfini-music.png",
-    "type": "team",
-    "year": 2015
-  },
-  {
-    "name": "Sinfini Music",
-    "filename": "sinfini-music-2.png",
-    "type": "team",
-    "year": 2012
-  },
-  {
-    "name": "Mercury Records",
-    "filename": "mercury-records.png",
-    "type": "team",
-    "year": 2012
-  },
-  {
-    "name": "The Old Brewhouse",
-    "filename": "the-old-brewhouse.png",
-    "type": "independent",
-    "year": 2017
-  },
-  {
-    "name": "Tesco Real Food",
-    "filename": "tesco-real-food.png",
-    "type": "team",
-    "year": 2017
-  },
-  {
-    "name": "Shipping Report",
-    "filename": "shipping-report.png",
-    "type": "team",
-    "year": 2018
-  },
-  {
-    "name": "Gift Envy",
-    "filename": "gift-envy.png",
-    "type": "independent",
-    "year": 2010
-  },
-  {
-    "name": "Rachael Russell",
-    "filename": "rachael-russell.png",
-    "type": "independent",
-    "year": 2015
-  },
-  {
-    "name": "Equator Gold",
-    "filename": "equator-gold.png",
-    "type": "independent",
-    "year": 2013
-  },
-  {
-    "name": "Russell and Brown's",
-    "filename": "russell-and-browns.png",
-    "type": "independent",
-    "year": 2015
-  },
-  {
-    "name": "Onemana Food Co.",
-    "filename": "onemana-food-co.jpg",
-    "type": "independent",
-    "year": 2015
-  },
-  {
-    "name": "Contessa 32 Experience",
-    "filename": "contessa-32-experience.png",
-    "type": "independent",
-    "year": 2015
-  },
-  {
-    "name": "Shopa",
-    "filename": "shopa.png",
-    "type": "team",
-    "year": 2014
-  },
-  {
-    "name": "Shopa",
-    "filename": "shopa-2.png",
-    "type": "team",
-    "year": 2014
-  },
-  {
-    "name": "SaLT by the Sea",
-    "filename": "salt-by-the-sea.png",
-    "type": "independent",
-    "year": 2016
-  },
-  {
-    "name": "SkipperLine",
-    "filename": "skipperline.png",
-    "type": "independent",
-    "year": 2012
-  },
-  {
-    "name": "Give to View",
-    "filename": "give-to-view.png",
-    "type": "independent",
-    "year": 2012
-  },
-  {
-    "name": "Rusty Rambles",
-    "filename": "rusty-rambles.png",
-    "type": "independent",
-    "year": 2012
-  },
-  {
-    "name": "Magentapink",
-    "filename": "magentapink.png",
-    "type": "independent",
-    "year": 2011
-  },
-  {
-    "name": "East West Relations",
-    "filename": "east-west-relations.png",
-    "type": "independent",
-    "year": 2011
-  },
-  {
-    "name": "Island Artisans",
-    "filename": "island-artisans.png",
-    "type": "independent",
-    "year": 2010
-  },
-  {
-    "name": "Chalet Basile",
-    "filename": "chalet-basile.png",
-    "type": "independent",
-    "year": 2010
-  },
-  {
-    "name": "Many Happy Returns",
-    "filename": "many-happy-returns.png",
-    "type": "team",
-    "year": 2010
-  },
-  {
-    "name": "Webhost Reviews",
-    "filename": "webhost-reviews.png",
-    "type": "independent",
-    "year": 2007
-  },
-  {
-    "name": "Boots Opticians Direct",
-    "filename": "boots-opticians-direct.png",
-    "type": "team",
-    "year": 2021
-  },
-  {
     "name": "Protected Video",
-    "filename": "protected-video.png",
-    "type": "independent",
-    "year": 2022
+    "description": "WordPress plugin that \"protects\" embedded videos with an overlay.",
+    "url": "https://protected-video.alecrust.com/",
+    "filename": "protected-video-logo.png"
   },
   {
-    "name": "SimuHire",
-    "filename": "simuhire.png",
-    "type": "independent",
-    "year": 2023
+    "name": "BrevWoo",
+    "description": "WordPress plugin that adds WooCommerce customers to Brevo.",
+    "url": "https://wordpress.org/plugins/brevwoo/",
+    "filename": "brevwoo-logo.png"
+  },
+  {
+    "name": "gphotos-takeout-repair",
+    "description": "Node.js CLI tool for organizing Google Photos exports.",
+    "url": "https://github.com/AlecRust/gphotos-takeout-repair",
+    "filename": "github-logo.png"
+  },
+  {
+    "name": "Hestia Control Panel",
+    "description": "Web-based hosting control panel for Linux servers (maintainer).",
+    "url": "https://hestiacp.com/",
+    "filename": "hestia-control-panel-logo.png"
   }
 ]

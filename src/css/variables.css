@@ -5,9 +5,11 @@
 :root {
   --fontSize-base: 17px;
   --lineHeight-base: 1.8;
+  --lineHeight-small: 1.4;
 
   --colorOffWhite: #f4f7fc;
   --colorLightGray: #dbdee2;
+  --colorDarkBrown: #443633;
   --colorCharcoal: #264653;
   --colorCharcoalDark: #1a2a33;
 

@@ -77,7 +77,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       templateParameters: {
-        projects: require('./src/data/projects.json').sort(
+        projects: require('./src/data/projects.json'),
+        galleries: require('./src/data/galleries.json').sort(
           (a, b) => b.year - a.year,
         ),
       },
