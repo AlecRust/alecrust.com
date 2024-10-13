@@ -1,26 +1,26 @@
 [
   {
+    "name": "Tide Cycle",
+    "description": "iOS and Android app for quickly checking the local tide state for your location.",
+    "url": "https://www.tidecycle.app/",
+    "filename": "tide-cycle-logo.png"
+  },
+  {
     "name": "Protected Video",
     "description": "WordPress plugin that \"protects\" embedded videos with an overlay.",
     "url": "https://protected-video.alecrust.com/",
     "filename": "protected-video-logo.png"
   },
   {
-    "name": "BrevWoo",
-    "description": "WordPress plugin that adds WooCommerce customers to Brevo.",
-    "url": "https://wordpress.org/plugins/brevwoo/",
-    "filename": "brevwoo-logo.png"
-  },
-  {
-    "name": "gphotos-takeout-repair",
-    "description": "Node.js CLI tool for organizing Google Photos exports.",
-    "url": "https://github.com/AlecRust/gphotos-takeout-repair",
-    "filename": "github-logo.png"
-  },
-  {
     "name": "Hestia Control Panel",
     "description": "Web-based hosting control panel for Linux servers (maintainer).",
     "url": "https://hestiacp.com/",
     "filename": "hestia-control-panel-logo.png"
+  },
+  {
+    "name": "BrevWoo",
+    "description": "WordPress plugin that adds WooCommerce customers to Brevo.",
+    "url": "https://wordpress.org/plugins/brevwoo/",
+    "filename": "brevwoo-logo.png"
   }
 ]
