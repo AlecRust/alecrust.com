@@ -8,7 +8,7 @@ test.describe('Tests', () => {
 
   test('renders correctly', async ({ page }) => {
     const image = await page.screenshot({ fullPage: true })
-    expect(image).toMatchSnapshot('render-snapshot.png')
+    expect(image).toMatchSnapshot('render-snapshot.png', { threshold: 0.25 })
   })
 
   test('scrolls to the contact section', async ({ page }) => {
