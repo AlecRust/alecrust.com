@@ -7,7 +7,6 @@
   font-family: "Titillium Web";
   font-style: normal;
   font-weight: 600;
-  src:
-    url("../font/titillium-web-v10-latin-regular.woff2") format("woff2"),
+  src: url("../font/titillium-web-v10-latin-regular.woff2") format("woff2"),
     url("../font/titillium-web-v10-latin-regular.woff") format("woff");
 }
