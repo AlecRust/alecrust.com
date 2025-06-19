@@ -20,7 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.27.4",
     "@babel/preset-env": "^7.27.2",
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.0",
     "@playwright/test": "^1.53.1",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
