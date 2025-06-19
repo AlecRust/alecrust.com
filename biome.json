@@ -27,9 +27,6 @@
       },
       "suspicious": {
         "noEmptyBlock": "off"
-      },
-      "style": {
-        "noDescendingSpecificity": "off"
       }
     }
   },
