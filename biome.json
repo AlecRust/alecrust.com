@@ -7,14 +7,16 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["**/dist/**"]
+    "includes": [
+      "**",
+      "!**/dist/**",
+      "!**/node_modules/**",
+      "!**/test-results/**"
+    ]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "space"
-  },
-  "organizeImports": {
-    "enabled": true
   },
   "linter": {
     "enabled": true,
@@ -26,8 +28,8 @@
       "suspicious": {
         "noEmptyBlock": "off"
       },
-      "complexity": {
-        "noForEach": "off"
+      "style": {
+        "noDescendingSpecificity": "off"
       }
     }
   },
@@ -35,6 +37,14 @@
     "formatter": {
       "quoteStyle": "single",
       "semicolons": "asNeeded"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
     }
   }
 }

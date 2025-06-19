@@ -1,5 +1,5 @@
-import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin'
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
+import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin'
 
 /**
  * Initializes PhotoSwipe gallery
