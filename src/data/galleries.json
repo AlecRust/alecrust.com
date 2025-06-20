@@ -244,5 +244,11 @@
     "filename": "simuhire.png",
     "type": "independent",
     "year": 2023
+  },
+  {
+    "name": "Tide Cycle",
+    "filename": "tide-cycle.png",
+    "type": "independent",
+    "year": 2024
   }
 ]
