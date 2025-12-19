@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "author": "Alec Rust (https://www.alecrust.com/)",
+  "packageManager": "npm@11.7.0",
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack",
