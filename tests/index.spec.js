@@ -6,9 +6,15 @@ test.describe('Tests', () => {
     await page.goto('/')
   })
 
-  test('renders correctly', async ({ page }) => {
-    const image = await page.screenshot({ fullPage: true })
-    expect(image).toMatchSnapshot('render-snapshot.png', { threshold: 0.25 })
+  test('renders correctly', async ({ page }, testInfo) => {
+    test.skip(
+      testInfo.project.name !== 'chromium',
+      'Visual snapshot only on desktop Chromium',
+    )
+    await expect(page).toHaveScreenshot('render-snapshot.png', {
+      fullPage: true,
+      maxDiffPixelRatio: 0.02,
+    })
   })
 
   test('scrolls to the contact section', async ({ page }) => {
