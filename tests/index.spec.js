@@ -6,10 +6,14 @@ test.describe('Tests', () => {
     await page.goto('/')
   })
 
-  test('renders correctly', async ({ page }) => {
+  test('renders correctly', async ({ page }, testInfo) => {
+    test.skip(
+      testInfo.project.name !== 'chromium',
+      'Visual snapshot only on desktop Chromium',
+    )
     await expect(page).toHaveScreenshot('render-snapshot.png', {
       fullPage: true,
-      maxDiffPixelRatio: 0.2,
+      maxDiffPixelRatio: 0.02,
     })
   })
 
