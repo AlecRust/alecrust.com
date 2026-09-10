@@ -21,8 +21,8 @@
     "photoswipe-dynamic-caption-plugin": "^1.2.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.7",
-    "@babel/preset-env": "^7.29.7",
+    "@babel/core": "^8.0.5",
+    "@babel/preset-env": "^8.0.5",
     "@biomejs/biome": "2.5.11",
     "@playwright/test": "^1.62.1",
     "babel-loader": "^10.1.1",
