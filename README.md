@@ -4,5 +4,5 @@ My personal site.
 
 ## Quick start
 
-1. `npm install`
+1. `npm ci`
 2. `npm run dev`

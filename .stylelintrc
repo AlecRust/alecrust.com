@@ -1,12 +1,35 @@
 {
-  "extends": "stylelint-config-suitcss",
-  "plugins": ["stylelint-selector-bem-pattern"],
+  "plugins": ["stylelint-order", "stylelint-selector-bem-pattern"],
   "rules": {
+    "at-rule-empty-line-before": null,
+    "at-rule-no-vendor-prefix": true,
+    "block-no-empty": null,
+    "color-hex-length": "short",
+    "color-no-invalid-hex": true,
+    "comment-empty-line-before": "always",
+    "comment-whitespace-inside": "always",
+    "declaration-block-no-shorthand-property-overrides": true,
+    "declaration-block-single-line-max-declarations": 1,
+    "function-calc-no-unspaced-operator": true,
+    "function-linear-gradient-no-nonstandard-direction": true,
+    "function-url-quotes": "always",
+    "media-feature-name-no-vendor-prefix": true,
+    "length-zero-no-unit": true,
+    "order/properties-alphabetical-order": true,
+    "property-no-vendor-prefix": true,
+    "rule-empty-line-before": null,
+    "selector-no-vendor-prefix": true,
+    "selector-pseudo-element-colon-notation": "double",
+    "value-no-vendor-prefix": true,
     "plugin/selector-bem-pattern": {
       "preset": "suit"
     },
-    "block-no-empty": null,
-    "rule-empty-line-before": null,
-    "at-rule-empty-line-before": null
+    "rule-selector-property-disallowed-list": {
+      "/^\\s*:root\\s*$/i": ["/^(?!--)/"],
+      "/^(?!\\s*:root\\s*$)/i": ["/^--/"]
+    },
+    "selector-disallowed-list": [
+      "/^(?!\\s*:root\\s*$)[\\s\\S]*:root/i"
+    ]
   }
 }
